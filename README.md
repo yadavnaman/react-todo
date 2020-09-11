@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![Screenshot-2020-09-11-at-5-35-47-AM.png](https://i.postimg.cc/PJnb9v5s/Screenshot-2020-09-11-at-5-35-47-AM.png)](https://postimg.cc/G8zss2Dq)
 
 In the project directory, you can run:
 
