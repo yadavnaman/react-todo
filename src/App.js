@@ -5,13 +5,16 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      message: 'Hello SuperTramp!',
+      message: 'Todo App',
       newTodo: '',
       todos: [{
-        title: 'Learn React',
+        title: 'Task 1',
         done: false
       }, {
-        title: 'Learn JSX',
+        title: 'Task 2',
+        done: false
+      }, {
+        title: 'Task 3',
         done: false
       }]
     };
@@ -71,7 +74,7 @@ class App extends Component {
   render () {
     return (
     <div className="App">
-      <h3>{this.state.message}</h3>
+      <h2>{this.state.message}</h2>
       <form onSubmit= {(event) => this.formSubmitted(event)}>
         <label htmlFor="newTodo">New Todo</label>
         <input onChange={(event) => this.newTodoChanged(event)} id="newTodo" name="newTodo" value={this.state.newTodo} />
@@ -82,7 +85,7 @@ class App extends Component {
         {this.state.todos.map((todo, index) => {
           return (<li key={todo.title}> 
             <input onChange={(event) => this.toggleTodoDone(event, index)}type="checkbox" checked={todo.done}/>
-            
+
             {/* <span style={{
             //  textDecoration: todo.done?'line-through':'inherit'
             // }}>{todo.title}</span>*/}
